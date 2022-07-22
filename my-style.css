@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2 family=Montserrat:ital,wght@0,400;1,300&family=Mulish:ital,wght@0,400;1,300;1,400&display=swap');
+
+nav{
+	font-family: "Mulish";
+	font-size: 15px;
+	line-height: 2.1;
+	letter-spacing: 0.8px;
+	word-wrap: break-word;
+	font-weight: 400;
+	background-color: #fff;
+	color: #333;}
+
+h1, h2, h3{color: #000;
+	font-family: "Montserrat";
+	font-weight: 600;}
+h4, h5, h6, p {
+	font-family: "Mulish";
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	word-wrap: break-word;
+	font-weight: 400;
+	background-color: #fff;
+	color: #666666;}
+h3.stroke{
+	-webkit-text-stroke: 1px #000;
+	color: transparent;}
+
+
+section { min-height: 300px; padding-bottom: 100px; padding-top: 100px;}
+
+
+.navbar .collapse{
+	display: flex;
+	align-content: flex-end;
+}
+.navbar .collapse .links ul{
+	margin: 0px;
+	list-style-type: none;
+	position: relative;
+	top: 10px;
+	left: 200px;
+}
+.navbar .collapse .links ul li{
+	margin: 0px 30px 0px 0px;
+	display: inline-block;
+}
+.navbar .collapse .links ul li:last-child{margin-right: 0px;}
+.navbar .collapse .links ul li a{
+	text-decoration: none;
+	color: #000;
+	font-family: "Montserrat";
+	font-weight: 600;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.navbar .collapse .links ul li a .first{
+	position: absolute;
+	transform: translateY(100%);
+	
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+.navbar .collapse .links ul li a .second{
+	position: relative;
+	display: block;
+	
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+.navbar .collapse .links ul li a:hover .first{
+	transform: translateY(0);
+}
+.navbar .collapse .links ul li a:hover .second{
+	transform: translateY(-100%);
+}
+.navbar .collapse .links ul li .current a .first{
+	transform: translateY(0);
+}
+.navbar .collapse .links ul li .current a .second{
+	transform: translateY(-100%);
+}
+.navbar .collapse .links ul li .current a{color: #000;}
+
+.nav-item .active:after {
+	opacity: 1;}
+
+
+#about 
+.title {
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    color: #333;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+	font-size: 13px;}
+
+.title-divider {
+    width: 70px;
+    height: 5px;
+    background-color: #ffb400;
+    margin: 20px 0 20px 0
+}
+.title-divider:hover {
+    width: 70px;
+    height: 5px;
+    background-color: #6f6f6f;
+    margin: 20px 0 20px 0
+}
+.skills-con .col-6:hover .chart .percent {
+    font-size: 45px;
+    color: #000;
+    transition-duration: .1s;
+    -moz-transition-duration: .1s;
+    -webkit-transition-duration: .1s;
+    -o-transition-duration: .1s;
+}
+
+#skill 
+.skill-1 .percent-1{top:30%; left: 5%}
+.skill-2 .percent-2{top:30%; left: 5%}
+.skill-3 .percent-3{top:30%; left: 5%}
+.skill-4 .percent-4{top:30%; left: 5%}
+
+
+.full-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #dfdfdf;
+ 
+    clear: both;
+}
+
+@media (max-width: 768px){
+#skill
+.skill-1 .percent-1{top:15%; left: 8%}
+.skill-2 .percent-2{top:15%; left: 8%}
+.skill-3 .percent-3{top:15%; left: 7%}
+.skill-4 .percent-4{top:15%; left: 7%}
+
+	
+}
+
+.icon-block i {
+    font-size: 60px;
+    color:  #ffb400;
+    margin: 8px 0 0
+}
+.icon-block i:hover {
+    font-size: 60px;
+    color:#6f6f6f;
+	margin: 8px 0 0}
+
+.icon-contact i {
+    font-size: 2rem;
+    color:  #ffb400;
+    margin-left: 30px;
+}
+.icon-contact i:hover {
+    font-size: 2rem;
+    color:#6f6f6f;
+	margin-left: 30px;}
+
+@media (max-width: 768px){
+#contact
+.icon-contact i {
+    font-size: 2rem;
+    color:  #ffb400;
+    margin-left: 0;
+}
+.icon-contact i:hover {
+    font-size: 2rem;
+    color:#6f6f6f;
+	margin-left: 0;
+	}
+
+
+#navbar {background-color:rgba(111,111,111,1);z-index: 1000 }
+.navbar-toggler{z-index: 1000; background-color:#ffb400; }
+	#navbarSupportedContent1{margin-left: 5%; text-align: left;
+	color:#ffb400 }
+	#navbarSupportedContent1 .links .first{margin-left: 5%; text-align: left;
+	color:#ffb400; }
+	
+}
+.social-icon i{color:#6f6f6f;
+	font-size: 2rem;
+   
+	margin:30px 30px 30px 0}
+.social-icon i:hover{color:#ffb400;
+	font-size: 2rem;
+    margin:30px 30px 30px 0}
+
+.contact-form button {
+	font-size: 1.5rem;
+}
